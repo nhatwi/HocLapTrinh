@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset ="utf-8">
+	<meta name ="viewport" content ="width=device-width, initial-scale=1.0">
+	<title> vẽ hình tròn </title>
+</head>
+<body>
+<canvas id ="mycanvas" width ="500" height="500" style ="border:1px solid #000000;"></canvas>
+<script>
+const canvas = document.getElementById("mycanvas")
+const context = canvas.getContext("2d")
+context.arc(10,20,30,0,360);
+context.stroke();
+</script>
+</body>
+</html>

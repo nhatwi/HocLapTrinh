@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset ="utf-8">
+	<meta name ="viewport" content ="width=device-width, initial-scale=1.0">
+	<title> Sài canvas</title>
+</head>
+<body>
+<canvas id ="mycanvas" width ="300" height ="100" style ="border:1px solid #000000;"></canvas>
+<script>
+const canvas = document.getElementById("mycanvas")
+const context = canvas.getContext("2d")	
+context.beginPath();
+context.moveTo(50, 50);
+context.lineTo(250, 150);
+context.stroke();
+</script>
+</body>
+</html>

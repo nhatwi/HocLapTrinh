@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="T&#7893;ng s&#244; ch&#7861;n, t&#7893;ng s&#7889; l&#7867;"/>
+        <attribute name="authors" value="nhatwi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-11-18 01:41:27 AM"/>
+        <attribute name="created" value="bmhhdHdpO0RFU0tUT1AtU0w0NDFPNjsyMDI2LTExLTE4OzEyOjU5OjI2IEFNOzI5NTQ="/>
+        <attribute name="edited" value="bmhhdHdpO0RFU0tUT1AtU0w0NDFPNjsyMDI2LTExLTE4OzAxOjQxOjI3IEFNOzE7MzA1Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, biendem, tongsochan, tongsole" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="tongsochan" expression="0"/>
+            <assign variable="biendem" expression="0"/>
+            <assign variable="tongsole" expression="0"/>
+            <while expression="biendem &lt;= n">
+                <if expression="biendem % 2 == 0">
+                    <then>
+                        <assign variable="tongsochan" expression="tongsochan + biendem"/>
+                        <assign variable="biendem" expression="biendem + 1"/>
+                    </then>
+                    <else>
+                        <assign variable="tongsole" expression="tongsole + biendem"/>
+                        <assign variable="biendem" expression="biendem + 1"/>
+                    </else>
+                </if>
+            </while>
+            <output expression="tongsochan" newline="True"/>
+            <output expression="tongsole" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
